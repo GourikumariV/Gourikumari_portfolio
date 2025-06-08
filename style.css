@@ -1,0 +1,184 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f2f1, #f1f8e9);
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #004d40, #00796b);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c8e6c9;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://source.unsplash.com/1600x400/?technology,web') center/cover no-repeat;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero h2 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3em;
+}
+
+/* Sections */
+.section {
+  padding: 50px 30px;
+  background-color: white;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+  color: #004d40;
+  border-left: 5px solid #81c784;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #fce4ec;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skills-list li:hover {
+  background: #f8bbd0;
+  transform: scale(1.1);
+}
+
+/* Projects */
+.project-card {
+  background-color: #f1f8e9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #81c784;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #e6ee9c;
+  transform: scale(1.02);
+}
+
+.project-card h3 {
+  color: #33691e;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1em;
+}
+
+form button {
+  background: #00796b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #004d40;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  font-size: 0.95em;
+  border-top: 3px solid #00796b;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section, .project-card, .skills-list li {
+  animation: fadeInUp 0.7s ease-in-out;
+}
